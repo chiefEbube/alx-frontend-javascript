@@ -8,6 +8,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   return Promise.allSettled([uploadPromise, signUpPromise])
     .then((results) => results.map((result) => ({
       status: result.status,
-      value: result.value,
+      value: result.value || result.reason,
     })));
 }
