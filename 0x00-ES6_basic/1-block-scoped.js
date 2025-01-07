@@ -5,5 +5,9 @@ export default function taskBlock(trueOrFalse) {
   if (trueOrFalse) {
     return [task, task2];
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 97529d80e788bf3323dd5d6216c550f957f05851
   return [task, task2];
 }
